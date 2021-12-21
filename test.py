@@ -49,6 +49,7 @@ downloaded_content_hash = hashlib.md5(downloaded_content).hexdigest()
 
 print("Downloaded content hash: " + downloaded_content_hash)
 
+assert len(downloaded_content) == len(content)
 assert content_hash == downloaded_content_hash
 
 print("Downloading object with sleep")
@@ -66,4 +67,5 @@ downloaded_content_hash = hashlib.md5(downloaded_content).hexdigest()
 
 print("Downloaded content hash: " + downloaded_content_hash)
 
+assert len(downloaded_content) == len(content)
 assert content_hash == downloaded_content_hash
