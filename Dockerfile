@@ -20,4 +20,4 @@ ENTRYPOINT [ "/entrypoint.sh" ]
 
 COPY test.py /
 
-CMD [ "python3", "test.py" ]
+CMD [ "python3", "-u", "test.py" ]
